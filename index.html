@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button Color Changer</title>
+    <style>
+        /* Basic style for the button */
+        #colorButton {
+            background-color: #008000; /* Initial color: green */
+            color: white;
+            padding: 200px 400px; /* Increase padding for a bigger button */
+            border: none;
+            border-radius: 10px;
+            font-size: 100px;
+            cursor: pointer;
+            transition: background-color 0.1s ease;
+	    width: 400px; /* Set a fixed width */
+            height: 300px; /* Set a fixed height */
+
+            display: block;         /* Makes the button a block element */
+            margin: 0 auto;         /* Centers the block element horizontally */
+
+            display: flex;            /* Enables flexbox on the button */
+            justify-content: center;  /* Centers text horizontally */
+            align-items: center;      /* Centers text vertically */
+            text-align: center;       /* Ensures text is aligned properly */
+            width: 200px;             /* Optional: set fixed width */
+            height: 80px;             /* Optional: set fixed height */
+
+        }
+
+        /* Style when the button is "active" */
+        #colorButton.active {
+            background-color: #FF0000; /* Color when active: red */
+        }
+    </style>
+</head>
+<body>
+    <!-- Button element with ID "colorButton" -->
+    <button id="colorButton">CANCEL!</button>
+
+    <script>
+        // Select the button by its ID and add a click event listener
+        document.getElementById("colorButton").addEventListener("click", function() {
+            // Toggle the "active" class on each click
+            this.classList.toggle("active");
+        });
+    </script>
+</body>
+</html>
