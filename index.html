@@ -11,12 +11,21 @@
             color: white;
             padding: 30px 50px; /* Increase padding for a bigger button */
             border: none;
-            border-radius: 100%;
-            font-size: 100px;
+            border-radius: 5px;
+            font-size: 35px;
             cursor: pointer;
             transition: background-color 0.0s ease;
+}
+
+/* Adjust styling for mobile screens (width <= 768px) */
+@media (max-width: 768px) {
+    body {
+        align-items: flex-start; /* Push content to the top */
+        padding-top: 50%;       /* Add padding to lower the button */
+    }
+
 	    width: 100px; /* Set a fixed width */
-            height: 100px; /* Set a fixed height */
+            height: 50px; /* Set a fixed height */
 
             display: block;         /* Makes the button a block element */
             margin: 0 auto;         /* Centers the block element horizontally */
@@ -25,8 +34,8 @@
             justify-content: center;  /* Centers text horizontally */
             align-items: center;      /* Centers text vertically */
             text-align: center;       /* Ensures text is aligned properly */
-            height: 100vh;              /* Makes the body fill the entire viewport height */
-            width: 100vh;              /* Makes the body fill the entire viewport width */
+            width: 100px;             /* Optional: set fixed width */
+            height: 50px;             /* Optional: set fixed height */
 
             font-family: Times New Romans; /* Sets the font for the entire page */
 
