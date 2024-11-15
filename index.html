@@ -9,22 +9,12 @@
         #colorButton {
             background-color: #000000; /* Initial color: black */
             color: white;
-            padding: 30px 50px; /* Increase padding for a bigger button */
+            padding: 50px 80px; /* Increase padding for a bigger button */
             border: none;
             border-radius: 5px;
             font-size: 35px;
             cursor: pointer;
             transition: background-color 0.0s ease;
-}
-
-/* Adjust styling for mobile screens (width <= 768px) */
-@media (max-width: 768px) {
-    body {
-        align-items: flex-start; /* Push content to the top */
-        padding-top: 50%;       /* Add padding to lower the button */
-        padding-left: 50%;       /* Adds 50% padding to the left */
-    }
-
 	    width: 100px; /* Set a fixed width */
             height: 50px; /* Set a fixed height */
 
@@ -40,6 +30,15 @@
             height: 50px;             /* Optional: set fixed height */
 
             font-family: Times New Romans; /* Sets the font for the entire page */
+}
+
+/* Adjust styling for mobile screens (width <= 768px) */
+@media (max-width: 768px) {
+    body {
+        align-items: flex-start; /* Push content to the top */
+        padding-top: 50%;       /* Add padding to lower the button */
+        padding-left: 50%; /* Adds 50% padding to the left side of the body */
+    }
 
         }
 
@@ -47,6 +46,7 @@
         #colorButton.active {
             background-color: #8B0000; /* Color when active: dark red */
         }
+
     </style>
 </head>
 <body>
