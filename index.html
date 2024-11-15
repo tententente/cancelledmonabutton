@@ -7,16 +7,16 @@
     <style>
         /* Basic style for the button */
         #colorButton {
-            background-color: #008000; /* Initial color: green */
+            background-color: #000000; /* Initial color: black */
             color: white;
-            padding: 200px 400px; /* Increase padding for a bigger button */
+            padding: 20px 40px; /* Increase padding for a bigger button */
             border: none;
             border-radius: 10px;
-            font-size: 100px;
+            font-size: 35px;
             cursor: pointer;
-            transition: background-color 0.1s ease;
-	    width: 400px; /* Set a fixed width */
-            height: 300px; /* Set a fixed height */
+            transition: background-color 0.0s ease;
+	    width: 40px; /* Set a fixed width */
+            height: 30px; /* Set a fixed height */
 
             display: block;         /* Makes the button a block element */
             margin: 0 auto;         /* Centers the block element horizontally */
@@ -28,17 +28,19 @@
             width: 200px;             /* Optional: set fixed width */
             height: 80px;             /* Optional: set fixed height */
 
+            font-family: Times New Romans; /* Sets the font for the entire page */
+
         }
 
         /* Style when the button is "active" */
         #colorButton.active {
-            background-color: #FF0000; /* Color when active: red */
+            background-color: #8B0000; /* Color when active: dark red */
         }
     </style>
 </head>
 <body>
     <!-- Button element with ID "colorButton" -->
-    <button id="colorButton">CANCEL!</button>
+    <button id="colorButton">CANCEL</button>
 
     <script>
         // Select the button by its ID and add a click event listener
